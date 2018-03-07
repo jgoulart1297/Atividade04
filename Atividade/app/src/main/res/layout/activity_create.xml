@@ -26,13 +26,15 @@
         style="@style/Widget.AppCompat.Button.Colored" />
 
     <TextView
+        android:id="@+id/texto_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/titulo_create"
+        android:layout_marginTop="30dp"
         android:text="O método é obrigatório e chamado uma única vez. O objetivo desse método é fazer a inicialização necessária para executar a aplicação.
         Chamado quando a atividade é criada pela primeira vez. É onde se deve fazer toda a configuração estática normal — criar exibições,
         vincular dados a listas etc. Esse método recebe um objeto Bundle (pacote) contendo o estado anterior da atividade, caso esse estado
-        tenha sido capturado. Sempre seguido de onStart()."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="62dp"
-        android:id="@+id/texto_create" />
+        tenha sido capturado. Sempre seguido de onStart()." />
 </RelativeLayout>

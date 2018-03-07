@@ -16,7 +16,7 @@ class CreateActivity : AppCompatActivity() {
         setContentView(R.layout.activity_create)
 
         textoCreate = findViewById(R.id.texto_create)
-
+        botaoStart = findViewById(R.id.botao_start)
         botaoStart.setOnClickListener({
             val bundle = Bundle()
             val intent = Intent(this, StartActivity::class.java)

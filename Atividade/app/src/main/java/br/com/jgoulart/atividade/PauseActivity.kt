@@ -17,14 +17,14 @@ class PauseActivity : AppCompatActivity() {
         setContentView(R.layout.activity_pause)
 
         textoPause = findViewById(R.id.texto_pause)
-
+        botaoResume = findViewById(R.id.botao_resume)
         botaoResume.setOnClickListener({
             val bundle = Bundle()
             val intent = Intent(this, ResumeActivity::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
         })
-
+        botaoStop = findViewById(R.id.botao_stop)
         botaoStop.setOnClickListener({
             val bundle = Bundle()
             val intent = Intent(this, StopActivity::class.java)

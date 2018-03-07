@@ -17,14 +17,14 @@ class StopActivity : AppCompatActivity() {
         setContentView(R.layout.activity_stop)
 
         textoStop = findViewById(R.id.texto_stop)
-
+        botaoStart = findViewById(R.id.botao_start)
         botaoStart.setOnClickListener({
             val bundle = Bundle()
             val intent = Intent(this, StartActivity::class.java)
             intent.putExtras(bundle)
             startActivity(intent)
         })
-
+        botaoDestroy = findViewById(R.id.botao_destroy)
         botaoDestroy.setOnClickListener({
             val bundle = Bundle()
             val intent = Intent(this, DestroyActivity::class.java)

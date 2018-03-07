@@ -16,7 +16,7 @@ class StartActivity : AppCompatActivity() {
         setContentView(R.layout.activity_start)
 
         textoStart = findViewById(R.id.texto_start)
-
+        botaoResume = findViewById(R.id.botao_resume)
         botaoResume.setOnClickListener({
             val bundle = Bundle()
             val intent = Intent(this, ResumeActivity::class.java)

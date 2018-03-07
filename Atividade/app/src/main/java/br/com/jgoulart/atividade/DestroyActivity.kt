@@ -16,7 +16,7 @@ class DestroyActivity : AppCompatActivity() {
         setContentView(R.layout.activity_destroy)
 
         textoDestroy = findViewById(R.id.texto_destroy)
-
+        botaoSair = findViewById(R.id.botao_sair)
         botaoSair.setOnClickListener({
             finish()
             onResume()
